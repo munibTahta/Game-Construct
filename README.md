@@ -2,7 +2,7 @@
 The Legend Of KingKong <br>
 
 game The legend of Kingkong menggunakan construct 2 <br>
-<img src="ss.png"> <br>
+<img src="Screenshot_1.png"> <br>
 
 <h2>Requirement</h2><br>
 Construct 2 <br>
