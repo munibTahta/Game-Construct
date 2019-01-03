@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu Event sheet</name>
+    <events>
+        <event-block any="1" sid="9894257377168381">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="7079119981762207" type="Keyboard" />
+                <condition id="4" name="Is touching object" sid="3282892631930288" type="Touch">
+                    <param id="0" name="Object">Restart</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="9809411359968316" type="Touch">
+                    <param id="0" name="Object">Title</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="3592681879783321" type="System" />
+                <action disabled="1" id="-9" name="Set value" sid="4153480093270527" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="8155413691278921" type="System">
+                    <param id="0" name="Variable">firsttime</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="4505899787143347" type="System">
+                    <param id="0" name="Layout">Level 1</param>
+                </action>
+                <action disabled="1" id="-25" name="Go to layout (by name)" sid="434817923791741" type="System">
+                    <param id="0" name="Layout">&quot;Level &quot; &amp;nextLayout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1950286167184347">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1216059804107376" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7891322248588529" type="System">
+                    <param id="0" name="Variable">firsttime</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="3186675731209536">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4949817343017743" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="7835188397695905" type="Restart">
+                            <param id="0" name="Text">&quot;Restart &quot; &amp;newline &amp;&quot;Score: &quot; &amp;Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7653235146315286">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="4744664417269449" type="Monster">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">ViewportRight(&quot;Front&quot;)+100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="2476190811778704" type="Monster">
+                    <param id="0" name="X">ViewportLeft(&quot;Front&quot;)-100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9408328975584588">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1614435996084839" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="7689128303294519" type="Audio">
+                    <param id="0" name="Tag">&quot;bgsound&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="9122044978983623" type="Audio">
+                    <param id="0" name="Tag">&quot;tamatsound&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7125631334720706">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7999526904454152" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9644696316734153" type="Audio">
+                    <param id="0" name="Audio file">roar</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action disabled="1" id="0" name="Play" sid="2849066653785567" type="Audio">
+                    <param id="0" name="Audio file">Generdyn</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;startsound&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="1121349047951791" type="Audio">
+                    <param id="0" name="Audio file">hutan</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;hutan&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8970500547898681">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="578405812281628" type="Touch">
+                    <param id="0" name="Object">tentang</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="7784135059625653" type="System">
+                    <param id="0" name="Layout">&quot;about&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

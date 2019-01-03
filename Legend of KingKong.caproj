@@ -1,0 +1,2650 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Legend of KingKong</name>
+    <description>Legend og KingKong Game</description>
+    <version>1.0</version>
+    <author>Game</author>
+    <author-email>munibtahta@gmail.com</author-email>
+    <author-website>under8bit.it</author-website>
+    <app-id>Game</app-id>
+    <unique-id>3om4fqck6p5en</unique-id>
+    <saved-with-version>22700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+        <plugin author="Scirra.com" id="win8" version="1">Windows 8</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1000</width>
+        <height>540</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Hide address bar">No</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Preview browser">Firefox</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use iOS retina display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Keyboard" sid="4787195834710922">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Gamepad" sid="9759805953199822">
+            <plugin id="gamepad" />
+        </object-type>
+        <object-type name="Touch" sid="7320566297413672">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Audio" sid="894081990155546">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Browser" sid="4285567871435145">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="WebStorage" sid="9816425187912759">
+            <plugin id="WebStorage" />
+        </object-type>
+        <object-type name="Windows8" sid="8270281103413108">
+            <plugin id="win8" />
+        </object-type>
+        <object-type name="Title" sid="6497421313349106">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Restart" sid="7274543395662205">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Instructions1" sid="6764528019852778">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ScoreLabel" sid="4995442751239014">
+            <plugin id="Text" />
+        </object-type>
+        <object-type global="1" name="LivesLabel" sid="148540047259258">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="PauseButton" sid="7815427615314395">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Player" sid="9638110853563783">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="GoingRight" sid="9140671009961415" type="boolean" />
+                <instance-variable name="hasGun" sid="960306410203351" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="1946756032994942">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1251222977477994" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkong1_tn.png">
+                        <collision-poly>
+                            <point x="0.255208" y="0.171875" />
+                            <point x="0.734375" y="0.183594" />
+                            <point x="0.734375" y="0.9375" />
+                            <point x="0.260417" y="0.9375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="9717402391929437" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkong1_tn.png">
+                        <collision-poly>
+                            <point x="0.244792" y="0.175781" />
+                            <point x="0.760417" y="0.171875" />
+                            <point x="0.682292" y="0.933594" />
+                            <point x="0.265625" y="0.933594" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkong3_tn.png">
+                        <collision-poly>
+                            <point x="0.239583" y="0.160156" />
+                            <point x="0.6875" y="0.175781" />
+                            <point x="0.651042" y="0.933594" />
+                            <point x="0.255208" y="0.933594" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkong2_tn.png">
+                        <collision-poly>
+                            <point x="0.265625" y="0.195313" />
+                            <point x="0.677083" y="0.203125" />
+                            <point x="0.682292" y="0.933594" />
+                            <point x="0.25" y="0.933594" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Gun" pingpong="0" repeatcount="1" repeatto="0" sid="742952726209445" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkong1_tn.png">
+                        <image-point name="Imagepoint 1" x="0.908333" y="0.383333" />
+                        <image-point name="Imagepoint 2" x="0.916667" y="0.483333" />
+                        <collision-poly>
+                            <point x="0.828125" y="0.410156" />
+                            <point x="0.723958" y="0.550782" />
+                            <point x="0.625" y="0.9375" />
+                            <point x="0.234375" y="0.9375" />
+                            <point x="0.296875" y="0.496094" />
+                            <point x="0.302083" y="0.234376" />
+                            <point x="0.479167" y="0.179688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkong2_tn.png">
+                        <image-point name="Imagepoint 1" x="0.116667" y="0.375" />
+                        <image-point name="Imagepoint 2" x="0.0833333" y="0.475" />
+                        <collision-poly>
+                            <point x="0.34375" y="0.257813" />
+                            <point x="0.541667" y="0.167969" />
+                            <point x="0.703125" y="0.238281" />
+                            <point x="0.645833" y="0.5" />
+                            <point x="0.760417" y="0.933594" />
+                            <point x="0.40625" y="0.933594" />
+                            <point x="0.395833" y="0.703125" />
+                            <point x="0.161458" y="0.445313" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkong3_tn.png">
+                        <image-point name="Imagepoint 1" x="0.141667" y="0.391667" />
+                        <image-point name="Imagepoint 2" x="0.125" y="0.5" />
+                        <collision-poly>
+                            <point x="0.375" y="0.28125" />
+                            <point x="0.59375" y="0.195313" />
+                            <point x="0.75" y="0.285156" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.78125" y="0.933594" />
+                            <point x="0.395833" y="0.933594" />
+                            <point x="0.46875" y="0.648438" />
+                            <point x="0.114583" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="StandingGun" pingpong="0" repeatcount="1" repeatto="0" sid="9142517381808671" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkong1_tn.png">
+                        <image-point name="Imagepoint 1" x="0.141667" y="0.683333" />
+                        <image-point name="Imagepoint 2" x="0.366667" y="0.758333" />
+                        <collision-poly>
+                            <point x="0.4375" y="0.328125" />
+                            <point x="0.604167" y="0.207031" />
+                            <point x="0.770833" y="0.218751" />
+                            <point x="0.760417" y="0.5" />
+                            <point x="0.791666" y="0.933594" />
+                            <point x="0.411459" y="0.933594" />
+                            <point x="0.270833" y="0.679688" />
+                            <point x="0.520833" y="0.492188" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BonusCrystal" sid="2083144325543068">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="1598765972728578">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7709368777263927" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.527778">
+                        <collision-poly>
+                            <point x="0.108696" y="0.138889" />
+                            <point x="0.5" y="0" />
+                            <point x="0.891304" y="0.138889" />
+                            <point x="1" y="0.5" />
+                            <point x="0.826087" y="0.777778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.173913" y="0.777778" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Monster" sid="7362845519878059">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="kind" sid="7906381821480536" type="number" />
+                <instance-variable name="direction" sid="7065628427187629" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="6717174151389778">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="538020831616852" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\111.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\222.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\333.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Zombie1" pingpong="0" repeatcount="1" repeatto="0" sid="3173392679484679" speed="18">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\11.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\22.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\33.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Zombie2" pingpong="0" repeatcount="1" repeatto="0" sid="2209207590649172" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Zombie3" pingpong="0" repeatcount="1" repeatto="0" sid="9284272728168652" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Zombie4" pingpong="0" repeatcount="1" repeatto="0" sid="953156476249649" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara4.png">
+                        <collision-poly>
+                            <point x="0.243902" y="0.190476" />
+                            <point x="0.5" y="0.0190476" />
+                            <point x="0.658537" y="0.266667" />
+                            <point x="0.585366" y="0.495238" />
+                            <point x="0.585366" y="0.67619" />
+                            <point x="0.5" y="0.761905" />
+                            <point x="0.341463" y="0.733333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.504854" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara5.png">
+                        <collision-poly>
+                            <point x="0.246753" y="0.184466" />
+                            <point x="0.493506" y="0.0291262" />
+                            <point x="0.623377" y="0.281553" />
+                            <point x="0.558442" y="0.495146" />
+                            <point x="0.480519" y="0.61165" />
+                            <point x="0.493506" y="0.932039" />
+                            <point x="0.311688" y="0.76699" />
+                            <point x="0.168831" y="0.495146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Zombie5" pingpong="0" repeatcount="1" repeatto="0" sid="4045925170391642" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.243902" y="0.190476" />
+                            <point x="0.5" y="0.0190476" />
+                            <point x="0.658537" y="0.266667" />
+                            <point x="0.585366" y="0.495238" />
+                            <point x="0.585366" y="0.67619" />
+                            <point x="0.5" y="0.761905" />
+                            <point x="0.341463" y="0.733333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.504854" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.246753" y="0.184466" />
+                            <point x="0.493506" y="0.0291262" />
+                            <point x="0.623377" y="0.281553" />
+                            <point x="0.558442" y="0.495146" />
+                            <point x="0.480519" y="0.61165" />
+                            <point x="0.493506" y="0.932039" />
+                            <point x="0.311688" y="0.76699" />
+                            <point x="0.168831" y="0.495146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="1" name="Zombie6" pingpong="0" repeatcount="1" repeatto="0" sid="4292395623224011" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504587" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\6.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="0.136719" y="0.2" />
+                            <point x="0.5" y="0.217143" />
+                            <point x="0.738281" y="0.497143" />
+                            <point x="0.738281" y="0.617143" />
+                            <point x="0.5" y="0.988571" />
+                            <point x="0.0429688" y="0.937143" />
+                            <point x="0.0195313" y="0.497143" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.243902" y="0.190476" />
+                            <point x="0.5" y="0.0190476" />
+                            <point x="0.658537" y="0.266667" />
+                            <point x="0.585366" y="0.495238" />
+                            <point x="0.585366" y="0.67619" />
+                            <point x="0.5" y="0.761905" />
+                            <point x="0.341463" y="0.733333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.504854" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.246753" y="0.184466" />
+                            <point x="0.493506" y="0.0291262" />
+                            <point x="0.623377" y="0.281553" />
+                            <point x="0.558442" y="0.495146" />
+                            <point x="0.480519" y="0.61165" />
+                            <point x="0.493506" y="0.932039" />
+                            <point x="0.311688" y="0.76699" />
+                            <point x="0.168831" y="0.495146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Zombie7" pingpong="0" repeatcount="1" repeatto="0" sid="8265964795821588" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.243902" y="0.190476" />
+                            <point x="0.5" y="0.0190476" />
+                            <point x="0.658537" y="0.266667" />
+                            <point x="0.585366" y="0.495238" />
+                            <point x="0.585366" y="0.67619" />
+                            <point x="0.5" y="0.761905" />
+                            <point x="0.341463" y="0.733333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.504854" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.246753" y="0.184466" />
+                            <point x="0.493506" y="0.0291262" />
+                            <point x="0.623377" y="0.281553" />
+                            <point x="0.558442" y="0.495146" />
+                            <point x="0.480519" y="0.61165" />
+                            <point x="0.493506" y="0.932039" />
+                            <point x="0.311688" y="0.76699" />
+                            <point x="0.168831" y="0.495146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Zombie8" pingpong="0" repeatcount="1" repeatto="0" sid="2492670875382799" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.243902" y="0.190476" />
+                            <point x="0.5" y="0.0190476" />
+                            <point x="0.658537" y="0.266667" />
+                            <point x="0.585366" y="0.495238" />
+                            <point x="0.585366" y="0.67619" />
+                            <point x="0.5" y="0.761905" />
+                            <point x="0.341463" y="0.733333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.504854" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.246753" y="0.184466" />
+                            <point x="0.493506" y="0.0291262" />
+                            <point x="0.623377" y="0.281553" />
+                            <point x="0.558442" y="0.495146" />
+                            <point x="0.480519" y="0.61165" />
+                            <point x="0.493506" y="0.932039" />
+                            <point x="0.311688" y="0.76699" />
+                            <point x="0.168831" y="0.495146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Zombie9" pingpong="0" repeatcount="1" repeatto="0" sid="9730610488900438" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.243902" y="0.190476" />
+                            <point x="0.5" y="0.0190476" />
+                            <point x="0.658537" y="0.266667" />
+                            <point x="0.585366" y="0.495238" />
+                            <point x="0.585366" y="0.67619" />
+                            <point x="0.5" y="0.761905" />
+                            <point x="0.341463" y="0.733333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.504854" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.246753" y="0.184466" />
+                            <point x="0.493506" y="0.0291262" />
+                            <point x="0.623377" y="0.281553" />
+                            <point x="0.558442" y="0.495146" />
+                            <point x="0.480519" y="0.61165" />
+                            <point x="0.493506" y="0.932039" />
+                            <point x="0.311688" y="0.76699" />
+                            <point x="0.168831" y="0.495146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Zombie10" pingpong="0" repeatcount="1" repeatto="0" sid="3406130399743525" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.243902" y="0.190476" />
+                            <point x="0.5" y="0.0190476" />
+                            <point x="0.658537" y="0.266667" />
+                            <point x="0.585366" y="0.495238" />
+                            <point x="0.585366" y="0.67619" />
+                            <point x="0.5" y="0.761905" />
+                            <point x="0.341463" y="0.733333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.504854" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.246753" y="0.184466" />
+                            <point x="0.493506" y="0.0291262" />
+                            <point x="0.623377" y="0.281553" />
+                            <point x="0.558442" y="0.495146" />
+                            <point x="0.480519" y="0.61165" />
+                            <point x="0.493506" y="0.932039" />
+                            <point x="0.311688" y="0.76699" />
+                            <point x="0.168831" y="0.495146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="1" name="Zombie1Left" pingpong="0" repeatcount="1" repeatto="0" sid="7303293658467097" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495413" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\6.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="0.178571" y="0.505051" />
+                            <point x="0.261905" y="0.222222" />
+                            <point x="0.5" y="0.242424" />
+                            <point x="0.666667" y="0.282828" />
+                            <point x="0.678571" y="0.505051" />
+                            <point x="0.654762" y="0.707071" />
+                            <point x="0.5" y="0.979798" />
+                            <point x="0.25" y="0.787879" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.341463" y="0.266667" />
+                            <point x="0.5" y="0.238095" />
+                            <point x="0.585366" y="0.32381" />
+                            <point x="0.585366" y="0.504762" />
+                            <point x="0.658537" y="0.733333" />
+                            <point x="0.5" y="0.980952" />
+                            <point x="0.243902" y="0.809524" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.504854" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.168831" y="0.504854" />
+                            <point x="0.311688" y="0.23301" />
+                            <point x="0.493506" y="0.0679612" />
+                            <point x="0.480519" y="0.38835" />
+                            <point x="0.558442" y="0.504854" />
+                            <point x="0.623377" y="0.718447" />
+                            <point x="0.493506" y="0.970874" />
+                            <point x="0.246753" y="0.815534" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="Zombie2Left" pingpong="0" repeatcount="1" repeatto="0" sid="9664918202067307" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.497143" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.497143" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-4.png">
+                        <collision-poly>
+                            <point x="0.243902" y="0.190476" />
+                            <point x="0.5" y="0.0190476" />
+                            <point x="0.658537" y="0.266667" />
+                            <point x="0.585366" y="0.495238" />
+                            <point x="0.585366" y="0.67619" />
+                            <point x="0.5" y="0.761905" />
+                            <point x="0.341463" y="0.733333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="Zombie3Left" pingpong="0" repeatcount="1" repeatto="0" sid="2304455933342449" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="E:\_PROJECT\Construc2\Kingkong\assets\wholetank\key-frames\right\right-4.png">
+                        <collision-poly>
+                            <point x="0.0195313" y="0.502857" />
+                            <point x="0.0429688" y="0.0628572" />
+                            <point x="0.5" y="0.0114286" />
+                            <point x="0.738281" y="0.382857" />
+                            <point x="0.738281" y="0.502857" />
+                            <point x="0.5" y="0.782857" />
+                            <point x="0.136719" y="0.8" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Zombie4Left" pingpong="0" repeatcount="1" repeatto="0" sid="8047985688355996" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495238" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.341463" y="0.266667" />
+                            <point x="0.5" y="0.238095" />
+                            <point x="0.585366" y="0.32381" />
+                            <point x="0.585366" y="0.504762" />
+                            <point x="0.658537" y="0.733333" />
+                            <point x="0.5" y="0.980952" />
+                            <point x="0.243902" y="0.809524" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.495146" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.168831" y="0.504854" />
+                            <point x="0.311688" y="0.23301" />
+                            <point x="0.493506" y="0.0679612" />
+                            <point x="0.480519" y="0.38835" />
+                            <point x="0.558442" y="0.504854" />
+                            <point x="0.623377" y="0.718447" />
+                            <point x="0.493506" y="0.970874" />
+                            <point x="0.246753" y="0.815534" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Zombie5Left" pingpong="0" repeatcount="1" repeatto="0" sid="6323218122915947" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495238" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.341463" y="0.266667" />
+                            <point x="0.5" y="0.238095" />
+                            <point x="0.585366" y="0.32381" />
+                            <point x="0.585366" y="0.504762" />
+                            <point x="0.658537" y="0.733333" />
+                            <point x="0.5" y="0.980952" />
+                            <point x="0.243902" y="0.809524" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.495146" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.168831" y="0.504854" />
+                            <point x="0.311688" y="0.23301" />
+                            <point x="0.493506" y="0.0679612" />
+                            <point x="0.480519" y="0.38835" />
+                            <point x="0.558442" y="0.504854" />
+                            <point x="0.623377" y="0.718447" />
+                            <point x="0.493506" y="0.970874" />
+                            <point x="0.246753" y="0.815534" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="1" name="Zombie6Left" pingpong="0" repeatcount="1" repeatto="0" sid="6770084097522815" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495413" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\6.png">
+                        <collision-poly>
+                            <point x="0.25641" y="0.504587" />
+                            <point x="0.346154" y="0.247706" />
+                            <point x="0.5" y="0.0642202" />
+                            <point x="0.5" y="0.357798" />
+                            <point x="0.551282" y="0.504587" />
+                            <point x="0.653846" y="0.752294" />
+                            <point x="0.5" y="0.981651" />
+                            <point x="0.25641" y="0.816514" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="0.134146" y="0.5" />
+                            <point x="0.158537" y="0.135417" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.512195" y="0.416667" />
+                            <point x="0.646341" y="0.5" />
+                            <point x="0.634146" y="0.6875" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.243902" y="0.791667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="0.181818" y="0.5" />
+                            <point x="0.261364" y="0.23" />
+                            <point x="0.5" y="0.27" />
+                            <point x="0.647727" y="0.31" />
+                            <point x="0.647727" y="0.5" />
+                            <point x="0.636364" y="0.68" />
+                            <point x="0.5" y="0.96" />
+                            <point x="0.25" y="0.78" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="0.178571" y="0.505051" />
+                            <point x="0.261905" y="0.222222" />
+                            <point x="0.5" y="0.242424" />
+                            <point x="0.666667" y="0.282828" />
+                            <point x="0.678571" y="0.505051" />
+                            <point x="0.654762" y="0.707071" />
+                            <point x="0.5" y="0.979798" />
+                            <point x="0.25" y="0.787879" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.341463" y="0.266667" />
+                            <point x="0.5" y="0.238095" />
+                            <point x="0.585366" y="0.32381" />
+                            <point x="0.585366" y="0.504762" />
+                            <point x="0.658537" y="0.733333" />
+                            <point x="0.5" y="0.980952" />
+                            <point x="0.243902" y="0.809524" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.504854" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.168831" y="0.504854" />
+                            <point x="0.311688" y="0.23301" />
+                            <point x="0.493506" y="0.0679612" />
+                            <point x="0.480519" y="0.38835" />
+                            <point x="0.558442" y="0.504854" />
+                            <point x="0.623377" y="0.718447" />
+                            <point x="0.493506" y="0.970874" />
+                            <point x="0.246753" y="0.815534" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Zombie7Left" pingpong="0" repeatcount="1" repeatto="0" sid="1946282006621903" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495238" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.341463" y="0.266667" />
+                            <point x="0.5" y="0.238095" />
+                            <point x="0.585366" y="0.32381" />
+                            <point x="0.585366" y="0.504762" />
+                            <point x="0.658537" y="0.733333" />
+                            <point x="0.5" y="0.980952" />
+                            <point x="0.243902" y="0.809524" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.495146" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.168831" y="0.504854" />
+                            <point x="0.311688" y="0.23301" />
+                            <point x="0.493506" y="0.0679612" />
+                            <point x="0.480519" y="0.38835" />
+                            <point x="0.558442" y="0.504854" />
+                            <point x="0.623377" y="0.718447" />
+                            <point x="0.493506" y="0.970874" />
+                            <point x="0.246753" y="0.815534" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="1" name="Zombie8Left" pingpong="0" repeatcount="1" repeatto="0" sid="8273547914745913" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495413" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\6.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.494949" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="0.136719" y="0.2" />
+                            <point x="0.5" y="0.217143" />
+                            <point x="0.738281" y="0.497143" />
+                            <point x="0.738281" y="0.617143" />
+                            <point x="0.5" y="0.988571" />
+                            <point x="0.0429688" y="0.937143" />
+                            <point x="0.0195313" y="0.497143" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495238" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.341463" y="0.266667" />
+                            <point x="0.5" y="0.238095" />
+                            <point x="0.585366" y="0.32381" />
+                            <point x="0.585366" y="0.504762" />
+                            <point x="0.658537" y="0.733333" />
+                            <point x="0.5" y="0.980952" />
+                            <point x="0.243902" y="0.809524" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.495146" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.168831" y="0.504854" />
+                            <point x="0.311688" y="0.23301" />
+                            <point x="0.493506" y="0.0679612" />
+                            <point x="0.480519" y="0.38835" />
+                            <point x="0.558442" y="0.504854" />
+                            <point x="0.623377" y="0.718447" />
+                            <point x="0.493506" y="0.970874" />
+                            <point x="0.246753" y="0.815534" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Zombie9Left" pingpong="0" repeatcount="1" repeatto="0" sid="6481955267826765" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495238" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.341463" y="0.266667" />
+                            <point x="0.5" y="0.238095" />
+                            <point x="0.585366" y="0.32381" />
+                            <point x="0.585366" y="0.504762" />
+                            <point x="0.658537" y="0.733333" />
+                            <point x="0.5" y="0.980952" />
+                            <point x="0.243902" y="0.809524" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.495146" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.168831" y="0.504854" />
+                            <point x="0.311688" y="0.23301" />
+                            <point x="0.493506" y="0.0679612" />
+                            <point x="0.480519" y="0.38835" />
+                            <point x="0.558442" y="0.504854" />
+                            <point x="0.623377" y="0.718447" />
+                            <point x="0.493506" y="0.970874" />
+                            <point x="0.246753" y="0.815534" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Zombie10Left" pingpong="0" repeatcount="1" repeatto="0" sid="2655079433473801" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.494949" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495238" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara4.png">
+                        <collision-poly>
+                            <point x="0.341463" y="0.266667" />
+                            <point x="0.5" y="0.238095" />
+                            <point x="0.585366" y="0.32381" />
+                            <point x="0.585366" y="0.504762" />
+                            <point x="0.658537" y="0.733333" />
+                            <point x="0.5" y="0.980952" />
+                            <point x="0.243902" y="0.809524" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.495146" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tentara\tentara5.png">
+                        <collision-poly>
+                            <point x="0.168831" y="0.504854" />
+                            <point x="0.311688" y="0.23301" />
+                            <point x="0.493506" y="0.0679612" />
+                            <point x="0.480519" y="0.38835" />
+                            <point x="0.558442" y="0.504854" />
+                            <point x="0.623377" y="0.718447" />
+                            <point x="0.493506" y="0.970874" />
+                            <point x="0.246753" y="0.815534" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chiliCBack" sid="2584147128398328">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\_PROJECT\Construc2\Kingkong\assets\bagus.png" />
+        </object-type>
+        <object-type name="PlusBonus" sid="463675878928753">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="2832403211888769">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Rotate" sid="9034505787272847">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Ouch" sid="3603733976479683">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="6144201325791424">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Rotate" sid="926457493938984">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4313070105465241" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.5" y="0.242424" />
+                            <point x="0.84375" y="0.287879" />
+                            <point x="0.8125" y="0.5" />
+                            <point x="0.8125" y="0.712121" />
+                            <point x="0.5" y="0.80303" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PausedText" sid="752631951589121">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="HiScore" sid="8672817012360186">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Limits" sid="6963330818008273">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9741706957647622">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8855829435742012" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.514286" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Support" sid="6449425695422991">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3383899042433927" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.171875" y="0.171875" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.828125" y="0.171875" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.828125" y="0.828125" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.171875" y="0.828125" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Thumb" sid="8144323348392861">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="State when the thumbstick is being controlled or not" name="isTouched" sid="7129610006010349" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6974523446121243" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.171875" y="0.171875" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.828125" y="0.171875" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.828125" y="0.828125" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.171875" y="0.828125" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Trig" sid="7747607877100425">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Position of the trigger" name="Pos" sid="1950013178705485" type="string" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8146906387851836" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ControledObject" sid="6677110199560766">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Direction" sid="4112880310185719" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="8457110180166357">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="8900686083192678">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="3692764017807338">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4432735734723966" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Revolver" sid="3374527296640867">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="210139782648151">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3668028814918369" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="E:\_PROJECT\Construc2\Kingkong\assets\bananas_thumb.png">
+                        <collision-poly>
+                            <point x="0.0428571" y="0.0810811" />
+                            <point x="0.5" y="0.0810811" />
+                            <point x="0.9" y="0.486486" />
+                            <point x="0.985714" y="0.972973" />
+                            <point x="0.5" y="0.486486" />
+                            <point x="0.385714" y="0.27027" />
+                            <point x="0.571429" y="0.486486" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet" sid="2874371143114619">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="9822233655499888">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4234377803778684" speed="5">
+                    <frame duration="1" hotspotX="0.518333" hotspotY="0.501124" original-source="E:\_PROJECT\Construc2\Kingkong\assets\b1.png">
+                        <collision-poly>
+                            <point x="0.472222" y="0" />
+                            <point x="0.62963" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.00925926" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501124" original-source="E:\_PROJECT\Construc2\Kingkong\assets\b2.png">
+                        <collision-poly>
+                            <point x="0.108333" y="0.146067" />
+                            <point x="0.5" y="0.0426966" />
+                            <point x="0.725" y="0.370787" />
+                            <point x="0.751667" y="0.498876" />
+                            <point x="0.761667" y="0.678652" />
+                            <point x="0.5" y="0.496629" />
+                            <point x="0.46" y="0.379775" />
+                            <point x="0.501667" y="0.498876" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501124" original-source="E:\_PROJECT\Construc2\Kingkong\assets\b4.png">
+                        <collision-poly>
+                            <point x="0.0916667" y="0.123596" />
+                            <point x="0.5" y="0.629214" />
+                            <point x="0.526667" y="0.638202" />
+                            <point x="0.356667" y="0.498876" />
+                            <point x="0.751667" y="0.665169" />
+                            <point x="0.5" y="0.919101" />
+                            <point x="0.193333" y="0.739326" />
+                            <point x="0.07" y="0.498876" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="6980249145803958">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="AmmoLabel" sid="3595068853908375">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Crate" sid="9544436495711034">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Destiny" sid="7395413126119111" type="number" />
+                <instance-variable name="Content" sid="2102599133447936" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="9555441668957742">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8671310089302188" speed="5">
+                    <frame duration="1" hotspotX="0.505495" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.197802" y="0.82" />
+                            <point x="0.0659341" y="0.5" />
+                            <point x="0.0659341" y="0.06" />
+                            <point x="0.494505" y="0.05" />
+                            <point x="0.824176" y="0.16" />
+                            <point x="0.934066" y="0.5" />
+                            <point x="0.912088" y="0.92" />
+                            <point x="0.494505" y="0.92" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FireButton" sid="4309927631987681">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8718787277405869" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.171875" y="0.171875" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.828125" y="0.171875" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.828125" y="0.828125" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.171875" y="0.828125" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SignRight" sid="2853693258120153">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3860585159124104" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.142857" y="0.142857" />
+                            <point x="0.5" y="0.142857" />
+                            <point x="0.828571" y="0.171429" />
+                            <point x="0.885714" y="0.5" />
+                            <point x="0.714286" y="0.714286" />
+                            <point x="0.357143" y="1" />
+                            <point x="0.3" y="0.7" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door" sid="9408097461831155">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4928015238382335" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504425">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.0265487" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.495575" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.495575" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SignExit" sid="8255335431658581">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9436800017844547" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0857143" y="0.0857143" />
+                            <point x="0.5" y="0" />
+                            <point x="0.914286" y="0.0857143" />
+                            <point x="1" y="0.5" />
+                            <point x="0.657143" y="0.657143" />
+                            <point x="0.5" y="1" />
+                            <point x="0.342857" y="0.657143" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="1300154656745008">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\_PROJECT\Construc2\Kingkong\assets\level3.png" />
+        </object-type>
+        <object-type name="DeadZombie" sid="8091543562638692">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="5378141814954176">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1425337849314938" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mati.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="DeadZombie1" pingpong="0" repeatcount="1" repeatto="0" sid="1146542815104903" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mati.png">
+                        <collision-poly>
+                            <point x="0.177083" y="0.132813" />
+                            <point x="0.5" y="0.0703125" />
+                            <point x="0.489583" y="0.382813" />
+                            <point x="0.635417" y="0.5" />
+                            <point x="0.8125" y="0.859375" />
+                            <point x="0.5" y="0.859375" />
+                            <point x="0.364583" y="0.726563" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="DeadZombie2" pingpong="0" repeatcount="1" repeatto="0" sid="9220928199973039" speed="5">
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.504065" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tankMati.png">
+                        <collision-poly>
+                            <point x="0.302083" y="0.226563" />
+                            <point x="0.5" y="0.101563" />
+                            <point x="0.65625" y="0.257813" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.833333" y="0.875" />
+                            <point x="0.5" y="0.796875" />
+                            <point x="0.239583" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="DeadZombie3" pingpong="0" repeatcount="1" repeatto="0" sid="256626129922971" speed="5">
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.504065" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tankMati.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.1875" />
+                            <point x="0.5" y="0.0546875" />
+                            <point x="0.666667" y="0.25" />
+                            <point x="0.604167" y="0.5" />
+                            <point x="0.833333" y="0.875" />
+                            <point x="0.5" y="0.992188" />
+                            <point x="0.302083" y="0.773438" />
+                            <point x="0.15625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="DeadZombie4" pingpong="0" repeatcount="1" repeatto="0" sid="3210596277609217" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mati.png">
+                        <collision-poly>
+                            <point x="0.208333" y="0.15625" />
+                            <point x="0.5" y="0.140625" />
+                            <point x="0.416667" y="0.4375" />
+                            <point x="0.583333" y="0.5" />
+                            <point x="0.791667" y="0.84375" />
+                            <point x="0.5" y="0.859375" />
+                            <point x="0.354167" y="0.734375" />
+                            <point x="0.208333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="DeadZombie5" pingpong="0" repeatcount="1" repeatto="0" sid="7603950821974235" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mati.png">
+                        <collision-poly>
+                            <point x="0.229167" y="0.171875" />
+                            <point x="0.5" y="0.15625" />
+                            <point x="0.739583" y="0.5" />
+                            <point x="0.833333" y="0.875" />
+                            <point x="0.5" y="0.976563" />
+                            <point x="0.135417" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="DeadZombie6" pingpong="0" repeatcount="1" repeatto="0" sid="1709400922253395" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mati.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.875" y="0.09375" />
+                            <point x="0.739583" y="0.5" />
+                            <point x="0.885417" y="0.914063" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.354167" y="0.734375" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="DeadZombie7" pingpong="0" repeatcount="1" repeatto="0" sid="5277341968434469" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mati.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.125" />
+                            <point x="0.5" y="0.15625" />
+                            <point x="0.489583" y="0.382813" />
+                            <point x="0.791667" y="0.84375" />
+                            <point x="0.5" y="0.765625" />
+                            <point x="0.427083" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="DeadZombie8" pingpong="0" repeatcount="1" repeatto="0" sid="5171677933351672" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mati.png">
+                        <collision-poly>
+                            <point x="0.302083" y="0.226563" />
+                            <point x="0.5" y="0.0703125" />
+                            <point x="0.770833" y="0.171875" />
+                            <point x="0.697917" y="0.5" />
+                            <point x="0.885417" y="0.914063" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.322917" y="0.757813" />
+                            <point x="0.0416667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="DeadZombie9" pingpong="0" repeatcount="1" repeatto="0" sid="9614629317639157" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mati.png">
+                        <collision-poly>
+                            <point x="0.520833" y="0.390625" />
+                            <point x="0.5" y="0.429688" />
+                            <point x="0.822917" y="0.132813" />
+                            <point x="0.645833" y="0.5" />
+                            <point x="0.614583" y="0.710938" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.28125" y="0.789063" />
+                            <point x="0.479167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="DeadZombie10" pingpong="0" repeatcount="1" repeatto="0" sid="4663051718563539" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mati.png">
+                        <collision-poly>
+                            <point x="0.447917" y="0.335938" />
+                            <point x="0.5" y="0.273438" />
+                            <point x="0.770833" y="0.171875" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.75" y="0.8125" />
+                            <point x="0.5" y="0.976563" />
+                            <point x="0.0520833" y="0.960938" />
+                            <point x="0.5" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="explosion" sid="949092928418119">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="3558312874651886">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="388498004895954" speed="5">
+                    <frame duration="0.2" hotspotX="0.5" hotspotY="0.509434" />
+                    <frame duration="0.2" hotspotX="0.5" hotspotY="0.509434" />
+                    <frame duration="0.2" hotspotX="0.5" hotspotY="0.509434" />
+                    <frame duration="0.2" hotspotX="0.5" hotspotY="0.509434" />
+                    <frame duration="0.2" hotspotX="0.5" hotspotY="0.509434" />
+                    <frame duration="0.2" hotspotX="0.5" hotspotY="0.509434" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Skull" sid="2894099605108513">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="direction" sid="3089013523301615" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="5394255947243166">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4955628358369214" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="E:\_PROJECT\Construc2\Kingkong\assets\11.png">
+                        <collision-poly>
+                            <point x="0.928571" y="0.494845" />
+                            <point x="0.836735" y="0.670103" />
+                            <point x="0.5" y="0.649485" />
+                            <point x="0.336735" y="0.494845" />
+                            <point x="0.5" y="0.463918" />
+                            <point x="0.780612" y="0.443299" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="E:\_PROJECT\Construc2\Kingkong\assets\22.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="E:\_PROJECT\Construc2\Kingkong\assets\33.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="7867154627539376" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="E:\_PROJECT\Construc2\Kingkong\assets\11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="E:\_PROJECT\Construc2\Kingkong\assets\22.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="E:\_PROJECT\Construc2\Kingkong\assets\33.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DeadSkull" sid="6715547332992552">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="658741188148081">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1796654718238337" speed="5">
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tank-fire\fire-keyframes\7.png">
+                        <collision-poly>
+                            <point x="0.921875" y="0.5" />
+                            <point x="0.78125" y="0.730769" />
+                            <point x="0.5" y="0.807692" />
+                            <point x="0.140625" y="0.826923" />
+                            <point x="0" y="0.5" />
+                            <point x="0.140625" y="0.173077" />
+                            <point x="0.5" y="0.134615" />
+                            <point x="0.796875" y="0.25" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="6405756570165092" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tank-fire\fire-keyframes\5.png">
+                        <collision-poly>
+                            <point x="0.494845" y="0.0714286" />
+                            <point x="0.670103" y="0.163265" />
+                            <point x="0.628866" y="0.5" />
+                            <point x="0.494845" y="0.454082" />
+                            <point x="0.515464" y="0.5" />
+                            <point x="0.443299" y="0.219388" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button" sid="4566443356539841">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Sprite" sid="2941204080014564">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5326905530711766" speed="5">
+                    <frame duration="1" hotspotX="0.50365" hotspotY="0.503497" original-source="E:\_PROJECT\asset\Platformer\GUI\level select\Button_03.png">
+                        <collision-poly>
+                            <point x="0.0729927" y="0.0699301" />
+                            <point x="0.49635" y="0" />
+                            <point x="0.912409" y="0.0839161" />
+                            <point x="0.978102" y="0.496504" />
+                            <point x="0.89781" y="0.902098" />
+                            <point x="0.49635" y="0.951049" />
+                            <point x="0.0875912" y="0.916084" />
+                            <point x="0" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="217951874972502">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="184446190075701" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\kisspng-gorilla-king-kong-ape-cartoon-gorilla-5ab3c7e5b85823.3957570315217315577551.png">
+                        <collision-poly>
+                            <point x="0.164444" y="0.246667" />
+                            <point x="0.5" y="0.0683333" />
+                            <point x="0.848889" y="0.226667" />
+                            <point x="0.987778" y="0.5" />
+                            <point x="0.86" y="0.79" />
+                            <point x="0.5" y="1" />
+                            <point x="0.08" y="0.88" />
+                            <point x="0.0422222" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="2470008380939887">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="647914495401255" speed="5">
+                    <frame duration="1" hotspotX="0.501562" hotspotY="0.5" original-source="C:\Users\Win-7\Downloads\26a3e6980950b4de64e29420d120ac05.png">
+                        <collision-poly>
+                            <point x="1" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.666016" />
+                            <point x="0.208984" y="0.791016" />
+                            <point x="0.160156" y="0.5" />
+                            <point x="0.417969" y="0.417969" />
+                            <point x="0.5" y="0.419922" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="1519657179692386">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7871426556276705" speed="5">
+                    <frame duration="1" hotspotX="0.502075" hotspotY="0.502392" original-source="E:\_PROJECT\Construc2\Kingkong\assets\aaa.bmp" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="9992879604339996">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3579092599477622" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\bananas_thumb.png">
+                        <collision-poly>
+                            <point x="0.476744" y="0.476744" />
+                            <point x="0.5" y="0.47093" />
+                            <point x="0.773256" y="0.226744" />
+                            <point x="0.889535" y="0.5" />
+                            <point x="0.732558" y="0.732558" />
+                            <point x="0.5" y="0.819767" />
+                            <point x="0.255814" y="0.744186" />
+                            <point x="0.354651" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nyawa" sid="7118901321581551">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9738510968059094" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\Audio_video_game_controls_Favourite-512.png">
+                        <collision-poly>
+                            <point x="0.158203" y="0.158203" />
+                            <point x="0.5" y="0.015625" />
+                            <point x="0.841797" y="0.158203" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.841797" y="0.841797" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.158203" y="0.841797" />
+                            <point x="0.015625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="2655289256366067">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4848739945196501" speed="5">
+                    <frame duration="1" hotspotX="0.503704" hotspotY="0.5" original-source="E:\_PROJECT\asset\Platformer\GUI\gui\widow\Window - Copy_62.png">
+                        <collision-poly>
+                            <point x="0.0148148" y="0.0526316" />
+                            <point x="0.496296" y="0.0263158" />
+                            <point x="0.985185" y="0.0526316" />
+                            <point x="1" y="0.5" />
+                            <point x="0.985185" y="0.947368" />
+                            <point x="0.496296" y="0.973684" />
+                            <point x="0.0148148" y="0.947368" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="leveltable" sid="4865244051706671">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7663129407862818" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\asset\Platformer\GUI\gui\widow\Window - Copy_72.png">
+                        <collision-poly>
+                            <point x="0.0694444" y="0.0568182" />
+                            <point x="0.5" y="0.0113636" />
+                            <point x="0.930556" y="0.0568182" />
+                            <point x="0.958333" y="0.5" />
+                            <point x="0.736111" y="0.784091" />
+                            <point x="0.5" y="0.943182" />
+                            <point x="0.263889" y="0.784091" />
+                            <point x="0.0416667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="4976610956585354">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7548791762852352" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="3687343775392243">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="5127385619989109">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite10" sid="9910526169939087">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1631265212784925" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500773" original-source="E:\_PROJECT\Construc2\Kingkong\assets\il_570xN.1242555529_kivu.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="1725655368212213">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9121082950006965" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504132" original-source="E:\_PROJECT\asset\Platformer\GUI\gui\widow\Window - Copy_04.png">
+                        <collision-poly>
+                            <point x="0.0829694" y="0.31405" />
+                            <point x="0.5" y="0" />
+                            <point x="0.917031" y="0.31405" />
+                            <point x="0.956332" y="0.834711" />
+                            <point x="0.5" y="0.61157" />
+                            <point x="0.0414847" y="0.842975" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text3" sid="1783975744238937">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite9" sid="5176740315072261">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1321429545474996" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.506024" original-source="E:\_PROJECT\asset\Platformer\GUI\gui\widow\Window - Copy_70.png">
+                        <collision-poly>
+                            <point x="0.247059" y="0.253012" />
+                            <point x="0.494118" y="0.0120482" />
+                            <point x="0.752941" y="0.253012" />
+                            <point x="0.929412" y="0.493976" />
+                            <point x="0.847059" y="0.843373" />
+                            <point x="0.164706" y="0.831325" />
+                            <point x="0.0823529" y="0.493976" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="81232975166672">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="783713392430655" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\asset\Platformer\GUI\gui\button\Button_11.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0869565" y="0.916667" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text4" sid="523434962458125">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TiledBackground" sid="5010287643821518">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\_PROJECT\Construc2\Kingkong\assets\level3.png" />
+        </object-type>
+        <object-type name="Sprite12" sid="94901553052746">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5574687496746939" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501035" original-source="E:\_PROJECT\asset\Platformer\GUI\gui\widow\Window - Copy_06.png">
+                        <collision-poly>
+                            <point x="0.0945274" y="0.118012" />
+                            <point x="0.499171" y="0" />
+                            <point x="0.905473" y="0.118012" />
+                            <point x="0.99005" y="0.498965" />
+                            <point x="0.980099" y="0.975155" />
+                            <point x="0.0149254" y="0.981366" />
+                            <point x="0" y="0.498965" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tentang" sid="2289382522450919">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8512160430443042" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Win-7\Downloads\information-icon-3.png">
+                        <collision-poly>
+                            <point x="0.212891" y="0.212891" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.787109" y="0.212891" />
+                            <point x="0.90625" y="0.5" />
+                            <point x="0.787109" y="0.787109" />
+                            <point x="0.5" y="0.90625" />
+                            <point x="0.212891" y="0.787109" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite13" sid="987506697282474">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9928005585910302" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\asset\Platformer\GUI\gui\button\Button_77.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text5" sid="1197706334816989">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite14" sid="1478144599163257">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5938138775561696" speed="5">
+                    <frame duration="1" hotspotX="0.50565" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\ros 22_tn.png">
+                        <collision-poly>
+                            <point x="0.168539" y="0.125" />
+                            <point x="0.494382" y="0.00833333" />
+                            <point x="0.786517" y="0.158333" />
+                            <point x="1" y="1" />
+                            <point x="0.494382" y="1" />
+                            <point x="0.202247" y="0.85" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player3" sid="1463830853754531">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="GoingRight" sid="7884288571299542" type="boolean" />
+                <instance-variable name="hasGun" sid="122429963444607" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="9187471028766568">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2431851412761167" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl3-1_tn.png">
+                        <collision-poly>
+                            <point x="0.733333" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.166667" y="0.833333" />
+                            <point x="0.208333" y="0.5" />
+                            <point x="0.383333" y="0.383333" />
+                            <point x="0.5" y="0.283333" />
+                            <point x="0.816667" y="0.183333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="8802479603429044" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl3-3_tn.png">
+                        <collision-poly>
+                            <point x="0.733333" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.183333" y="0.816667" />
+                            <point x="0.208333" y="0.5" />
+                            <point x="0.383333" y="0.383333" />
+                            <point x="0.5" y="0.283333" />
+                            <point x="0.816667" y="0.183333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl3-2_tn.png">
+                        <collision-poly>
+                            <point x="0.725" y="0.5" />
+                            <point x="0.841667" y="0.841667" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.208333" y="0.791667" />
+                            <point x="0.191667" y="0.5" />
+                            <point x="0.383333" y="0.383333" />
+                            <point x="0.5" y="0.283333" />
+                            <point x="0.816667" y="0.183333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl3-1_tn.png">
+                        <collision-poly>
+                            <point x="0.733333" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.166667" y="0.833333" />
+                            <point x="0.208333" y="0.5" />
+                            <point x="0.383333" y="0.383333" />
+                            <point x="0.5" y="0.283333" />
+                            <point x="0.816667" y="0.183333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Gun" pingpong="0" repeatcount="1" repeatto="0" sid="4792106210141156" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl3-3_tn.png">
+                        <collision-poly>
+                            <point x="0.733333" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.183333" y="0.816667" />
+                            <point x="0.208333" y="0.5" />
+                            <point x="0.383333" y="0.383333" />
+                            <point x="0.5" y="0.283333" />
+                            <point x="0.816667" y="0.183333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl3-2_tn.png">
+                        <collision-poly>
+                            <point x="0.725" y="0.5" />
+                            <point x="0.841667" y="0.841667" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.208333" y="0.791667" />
+                            <point x="0.191667" y="0.5" />
+                            <point x="0.383333" y="0.383333" />
+                            <point x="0.5" y="0.283333" />
+                            <point x="0.816667" y="0.183333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl3-1_tn.png">
+                        <collision-poly>
+                            <point x="0.733333" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.166667" y="0.833333" />
+                            <point x="0.208333" y="0.5" />
+                            <point x="0.383333" y="0.383333" />
+                            <point x="0.5" y="0.283333" />
+                            <point x="0.816667" y="0.183333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="StandingGun" pingpong="0" repeatcount="1" repeatto="0" sid="7719987829093411" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl3-2_tn.png">
+                        <collision-poly>
+                            <point x="0.725" y="0.5" />
+                            <point x="0.841667" y="0.841667" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.208333" y="0.791667" />
+                            <point x="0.191667" y="0.5" />
+                            <point x="0.383333" y="0.383333" />
+                            <point x="0.5" y="0.283333" />
+                            <point x="0.816667" y="0.183333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player2" sid="7426893257681025">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="GoingRight" sid="3561470832875136" type="boolean" />
+                <instance-variable name="hasGun" sid="4920012206484036" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="338745750132744">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="155151468863664" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl2-2_tn.png">
+                        <collision-poly>
+                            <point x="0.241667" y="0.241667" />
+                            <point x="0.5" y="0.266667" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.825" y="0.5" />
+                            <point x="0.858333" y="0.858333" />
+                            <point x="0.5" y="0.616667" />
+                            <point x="0.183333" y="0.816667" />
+                            <point x="0.308333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="4311808987343034" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl2-1_tn.png">
+                        <collision-poly>
+                            <point x="0.691667" y="0.5" />
+                            <point x="0.816667" y="0.816667" />
+                            <point x="0.5" y="0.616667" />
+                            <point x="0.141667" y="0.858333" />
+                            <point x="0.175" y="0.5" />
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.266667" />
+                            <point x="0.758333" y="0.241667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl2-2_tn.png">
+                        <collision-poly>
+                            <point x="0.683333" y="0.5" />
+                            <point x="0.716667" y="0.716667" />
+                            <point x="0.5" y="0.616667" />
+                            <point x="0.158333" y="0.841667" />
+                            <point x="0.175" y="0.5" />
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.266667" />
+                            <point x="0.758333" y="0.241667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl2-3_tn.png">
+                        <collision-poly>
+                            <point x="0.716667" y="0.5" />
+                            <point x="0.8" y="0.8" />
+                            <point x="0.5" y="0.616667" />
+                            <point x="0.225" y="0.775" />
+                            <point x="0.175" y="0.5" />
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.266667" />
+                            <point x="0.758333" y="0.241667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Gun" pingpong="0" repeatcount="1" repeatto="0" sid="8422412235674534" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl2-1_tn.png">
+                        <collision-poly>
+                            <point x="0.691667" y="0.5" />
+                            <point x="0.816667" y="0.816667" />
+                            <point x="0.5" y="0.616667" />
+                            <point x="0.141667" y="0.858333" />
+                            <point x="0.175" y="0.5" />
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.266667" />
+                            <point x="0.758333" y="0.241667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl2-2_tn.png">
+                        <collision-poly>
+                            <point x="0.683333" y="0.5" />
+                            <point x="0.716667" y="0.716667" />
+                            <point x="0.5" y="0.616667" />
+                            <point x="0.158333" y="0.841667" />
+                            <point x="0.175" y="0.5" />
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.266667" />
+                            <point x="0.758333" y="0.241667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl2-3_tn.png">
+                        <collision-poly>
+                            <point x="0.716667" y="0.5" />
+                            <point x="0.8" y="0.8" />
+                            <point x="0.5" y="0.616667" />
+                            <point x="0.225" y="0.775" />
+                            <point x="0.175" y="0.5" />
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.266667" />
+                            <point x="0.758333" y="0.241667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="StandingGun" pingpong="0" repeatcount="1" repeatto="0" sid="7368427665818327" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\kingkongl2-2_tn.png">
+                        <collision-poly>
+                            <point x="0.683333" y="0.5" />
+                            <point x="0.716667" y="0.716667" />
+                            <point x="0.5" y="0.616667" />
+                            <point x="0.158333" y="0.841667" />
+                            <point x="0.175" y="0.5" />
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.266667" />
+                            <point x="0.758333" y="0.241667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text6" sid="2169265675389766">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text7" sid="6400755850430419">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text8" sid="1362557433324172">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text9" sid="297148722782555">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text10" sid="8100299996738378">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text11" sid="2458543715505893">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="bos" sid="9711268331403328">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2271440110083085">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6365503682110415" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\bos tentara2_tn.png">
+                        <collision-poly>
+                            <point x="0.159722" y="3.26894e-007" />
+                            <point x="0.659722" y="0" />
+                            <point x="0.791667" y="0.179167" />
+                            <point x="0.833333" y="0.5" />
+                            <point x="0.833333" y="0.941666" />
+                            <point x="0.590278" y="1" />
+                            <point x="0.125" y="0.941667" />
+                            <point x="0.104166" y="0.483333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\bos tentara1_tn.png">
+                        <collision-poly>
+                            <point x="0.298611" y="0.179167" />
+                            <point x="0.5" y="0.0875" />
+                            <point x="0.701389" y="0.179167" />
+                            <point x="0.861111" y="0.5" />
+                            <point x="0.659722" y="0.795833" />
+                            <point x="0.5" y="0.7625" />
+                            <point x="0.340278" y="0.795833" />
+                            <point x="0.131944" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\startbootstrap-round-about-gh-pages\img\bos tentara3_tn.png">
+                        <collision-poly>
+                            <point x="0.298611" y="0.179167" />
+                            <point x="0.5" y="0.0875" />
+                            <point x="0.701389" y="0.179167" />
+                            <point x="0.854167" y="0.5" />
+                            <point x="0.659722" y="0.795833" />
+                            <point x="0.5" y="0.7625" />
+                            <point x="0.298611" y="0.820833" />
+                            <point x="0.145833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bosbar" sid="8486592558719858">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="nyawabosku" sid="8553718702882463" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="npc" sid="6214907005334886">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Direction" sid="9135814942781297" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="9826448132143216">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4301322229520656" speed="5">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mvp\1.png">
+                        <collision-poly>
+                            <point x="0.184615" y="0.105263" />
+                            <point x="0.492308" y="0.0877193" />
+                            <point x="0.769231" y="0.131579" />
+                            <point x="0.707692" y="0.5" />
+                            <point x="0.492308" y="0.903509" />
+                            <point x="0.338462" y="0.807018" />
+                            <point x="0.261538" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mvp\2.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.114035" />
+                            <point x="0.492308" y="0.0877193" />
+                            <point x="0.784615" y="0.122807" />
+                            <point x="0.738462" y="0.5" />
+                            <point x="0.661538" y="0.807018" />
+                            <point x="0.492308" y="0.833333" />
+                            <point x="0.415385" y="0.763158" />
+                            <point x="0.261538" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mvp\3.png">
+                        <collision-poly>
+                            <point x="0.215385" y="0.122807" />
+                            <point x="0.492308" y="0.114035" />
+                            <point x="0.753846" y="0.140351" />
+                            <point x="0.753846" y="0.5" />
+                            <point x="0.8" y="0.885965" />
+                            <point x="0.492308" y="0.798246" />
+                            <point x="0.261538" y="0.850877" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mvp\5.png">
+                        <collision-poly>
+                            <point x="0.215385" y="0.122807" />
+                            <point x="0.492308" y="0.0964912" />
+                            <point x="0.769231" y="0.131579" />
+                            <point x="0.753846" y="0.5" />
+                            <point x="0.707692" y="0.833333" />
+                            <point x="0.492308" y="0.815789" />
+                            <point x="0.307692" y="0.824561" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="died" pingpong="0" repeatcount="1" repeatto="0" sid="2890395030478088" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mvp\died1.png">
+                        <collision-poly>
+                            <point x="0.566372" y="0.561404" />
+                            <point x="0.495575" y="0.622807" />
+                            <point x="0.380531" y="0.614035" />
+                            <point x="0.778761" y="0.5" />
+                            <point x="0.778761" y="0.780702" />
+                            <point x="0.495575" y="0.763158" />
+                            <point x="0.238938" y="0.763158" />
+                            <point x="0.743363" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="npcmati" sid="2348872779297506">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9998627411710487" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\mvp\died1.png">
+                        <collision-poly>
+                            <point x="0.566372" y="0.561404" />
+                            <point x="0.495575" y="0.622807" />
+                            <point x="0.380531" y="0.614035" />
+                            <point x="0.778761" y="0.5" />
+                            <point x="0.778761" y="0.780702" />
+                            <point x="0.495575" y="0.763158" />
+                            <point x="0.238938" y="0.763158" />
+                            <point x="0.743363" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="benteng" sid="4173460970605367">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2893989152188635">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="7031578987639073">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8944730261877768" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tower.png">
+                        <collision-poly>
+                            <point x="0.27451" y="0.212121" />
+                            <point x="0.5" y="0.123737" />
+                            <point x="0.73366" y="0.205808" />
+                            <point x="0.769608" y="0.5" />
+                            <point x="0.846405" y="0.881313" />
+                            <point x="0.5" y="0.977273" />
+                            <point x="0.145425" y="0.887626" />
+                            <point x="0.240196" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bentenghp" sid="959552442259799">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="benteng2" sid="3241016076198471">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2479361741798639">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3883577644011568" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tower.png">
+                        <collision-poly>
+                            <point x="0.169935" y="0.207071" />
+                            <point x="0.571895" y="0.0176768" />
+                            <point x="0.818627" y="0.180556" />
+                            <point x="0.867647" y="0.515151" />
+                            <point x="0.918301" y="0.921717" />
+                            <point x="0.519608" y="1" />
+                            <point x="0.145425" y="0.887626" />
+                            <point x="0.122549" y="0.474747" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="benteng22" sid="4662731973223707">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="benteng3" sid="9069842555219918">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="benteng33" sid="2295005372019902">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="6730252898212223">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1226772787543316" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\_PROJECT\Construc2\Kingkong\assets\tower.png">
+                        <collision-poly>
+                            <point x="0.150327" y="0.176768" />
+                            <point x="0.598039" y="0.0126263" />
+                            <point x="0.73366" y="0.205808" />
+                            <point x="0.769608" y="0.5" />
+                            <point x="0.846405" y="0.881313" />
+                            <point x="0.5" y="0.977273" />
+                            <point x="0.145425" y="0.887626" />
+                            <point x="0.142157" y="0.510101" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite15" sid="7405001366052682">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4606897676869314" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Win-7\Downloads\img_514040.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Level 1.xml</layout>
+        <layout>Level 2.xml</layout>
+        <layout>Level 3.xml</layout>
+        <layout>Tamat.xml</layout>
+        <layout>Menu.xml</layout>
+        <layout>about.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Level Event sheet.xml</event-sheet>
+        <event-sheet>Menu Event sheet.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Tamat.xml</event-sheet>
+        <event-sheet>about.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="0" />
+        <global-instance type="Gamepad" uid="1">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
+        <global-instance type="Touch" uid="2">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="3">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="4" />
+        <global-instance type="WebStorage" uid="5" />
+        <global-instance type="Windows8" uid="6">
+            <properties>
+                <test-mode>No</test-mode>
+                <about-setting>Yes</about-setting>
+                <support-setting>Yes</support-setting>
+                <privacy-setting>Yes</privacy-setting>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="40" />
+    </global-instances>
+    <sounds-folder>
+        <file name="Generdyn.ogg" />
+        <file name="Hitman.ogg" />
+        <file name="win.ogg" />
+        <file name="Collect Gem.m4a" />
+        <file name="Collect Gem.ogg" />
+        <file name="Hit.m4a" />
+        <file name="Hit.ogg" />
+        <file name="kingdead.ogg" />
+        <file name="roar.ogg" />
+        <file name="hutan.ogg" />
+        <file name="Collect Key.m4a" />
+        <file name="Collect Key.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="loading-logo.png" />
+            <file name="icon-256.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

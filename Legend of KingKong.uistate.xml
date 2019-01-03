@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Level 1</layout>
+        <layout order="1">Level 2</layout>
+        <layout active="1" order="2">Level 3</layout>
+        <layout order="3">Tamat</layout>
+        <layout order="4">Menu</layout>
+        <layout order="10">about</layout>
+        <event-sheet order="5">Menu Event sheet</event-sheet>
+        <event-sheet order="6">Level Event sheet</event-sheet>
+        <event-sheet order="7">Event sheet 2</event-sheet>
+        <event-sheet order="8">Event sheet 3</event-sheet>
+        <event-sheet order="9">Tamat</event-sheet>
+        <event-sheet order="11">about</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="0" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="0" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Player/" />
+        <folder expanded="1" path="animation-folder/BonusCrystal/" />
+        <folder expanded="1" path="animation-folder/Monster/" />
+        <folder expanded="1" path="animation-folder/Ouch/" />
+        <folder expanded="1" path="animation-folder/Limits/" />
+        <folder expanded="1" path="animation-folder/Support/" />
+        <folder expanded="1" path="animation-folder/Thumb/" />
+        <folder expanded="1" path="animation-folder/Trig/" />
+        <folder expanded="1" path="animation-folder/ControledObject/" />
+        <folder expanded="1" path="animation-folder/Revolver/" />
+        <folder expanded="1" path="animation-folder/Bullet/" />
+        <folder expanded="1" path="animation-folder/Crate/" />
+        <folder expanded="1" path="animation-folder/FireButton/" />
+        <folder expanded="1" path="animation-folder/SignRight/" />
+        <folder expanded="1" path="animation-folder/Door/" />
+        <folder expanded="1" path="animation-folder/SignExit/" />
+        <folder expanded="1" path="animation-folder/DeadZombie/" />
+        <folder expanded="1" path="animation-folder/explosion/" />
+        <folder expanded="1" path="animation-folder/Skull/" />
+        <folder expanded="1" path="animation-folder/DeadSkull/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/nyawa/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/leveltable/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite10/" />
+        <folder expanded="1" path="animation-folder/Sprite8/" />
+        <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/Sprite11/" />
+        <folder expanded="1" path="animation-folder/Sprite12/" />
+        <folder expanded="1" path="animation-folder/tentang/" />
+        <folder expanded="1" path="animation-folder/Sprite13/" />
+        <folder expanded="1" path="animation-folder/Sprite14/" />
+        <folder expanded="1" path="animation-folder/Player3/" />
+        <folder expanded="1" path="animation-folder/player2/" />
+        <folder expanded="1" path="animation-folder/bos/" />
+        <folder expanded="1" path="animation-folder/npc/" />
+        <folder expanded="1" path="animation-folder/npcmati/" />
+        <folder expanded="1" path="animation-folder/benteng/" />
+        <folder expanded="1" path="animation-folder/benteng2/" />
+        <folder expanded="1" path="animation-folder/benteng33/" />
+        <folder expanded="1" path="animation-folder/Sprite15/" />
+    </folders-expanded>
+</c2uistate>
